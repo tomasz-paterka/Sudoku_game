@@ -1,6 +1,42 @@
 .Tile {
+	text-align: center;
 	width: 75px;
 	height: 75px;
-	text-align: center;
-	font-size: 30px;
+	box-sizing: border-box;
+	border: 1px solid #000000;
+	font-size: 18px;
+}
+
+.Tile:nth-child(3n+3){
+	border-right: 3px solid #000000;
+}
+.Tile:nth-child(n+19){
+	border-bottom: 3px solid #000000;
+}
+.Tile:nth-child(n+28){
+	border-bottom: 1px solid #000000;
+}
+.Tile:nth-child(n+46){
+	border-bottom: 3px solid #000000;
+}
+.Tile:nth-child(n+55){
+	border-bottom: 1px solid #000000;
+}
+
+input:hover {
+	background-color: #fff;
+	cursor: pointer;
+}
+input:disabled {
+	background-color: #408E2F;
+	color: #000000;
+}
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin: 0;
+}
+input:disabled:hover {
+	background-color: #9AD58E;
+	cursor: auto;
 }
