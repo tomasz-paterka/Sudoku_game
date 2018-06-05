@@ -1,0 +1,11 @@
+.buttons-container {
+	text-align: center;
+}
+
+button {
+	padding: 10px;
+	background-color: darkgreen;
+	color: aliceblue;
+	border: none;
+	margin: 10px;
+}
